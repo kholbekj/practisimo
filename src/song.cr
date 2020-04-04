@@ -21,8 +21,12 @@ class Song
     "songs/#{title}.song"
   end
 
+  def html_name
+    "#{title}.html"
+  end
+
   def html_path
-    "html/#{title}.html"
+    "html/#{html_name}"
   end
 
   def to_song_file
@@ -38,6 +42,7 @@ class Song
         <title>#{title}</title>
       </head>
       <body>
+        <a href="index.html">Back to index!</a><br>
         <iframe width="560" height="315" src="#{link}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
         <img src="#{file_path}"></img>

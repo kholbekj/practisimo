@@ -18,6 +18,6 @@ mv practisimo /usr/local/bin
 ```
 practisimo create "Name of song" -f "path_to_image" -y "youtube EMBED link"
 practisimo generate
-xdg-open html/Name\ of\ song.html #linux
-open html/Name\ of\ song.html #mac
+xdg-open html/index.html #linux
+open html/index.html #mac
 ```

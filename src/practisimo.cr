@@ -21,8 +21,28 @@ module Practisimo
     end
     File.write(@@song.path, @@song.to_song_file)
   elsif ARGV[0] == "generate"
+    index = <<-HTML
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Index!</title>
+      </head>
+      <body>
+        <ul>
+    HTML
+
     Song.load_all.each do |song|
       File.write(song.html_path, song.to_html)
+      index += "<li><a href=\"#{song.html_name}\">#{song.title}</a>\n"
     end
+
+    index += <<-HTML
+        <ul>
+      </body>
+    </html>
+    HTML
+
+    File.write("html/index.html", index)
   end
 end
