@@ -1,27 +1,23 @@
-# practisimo
+# Practisimo
 
-TODO: Write a description here
+This is a little program that generates html pages with youtube embeds next to a picture.
 
-## Installation
+It was meant for backing tracks and sheet music, but get creative with it.
 
-TODO: Write installation instructions here
+Shake it up.
+
+## Building and installing
+
+```
+crystal build src/practisimo.cr
+mv practisimo /usr/local/bin
+```
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/practisimo/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Kasper Jensen](https://github.com/your-github-user) - creator and maintainer
+```
+practisimo create "Name of song" -f "path_to_image" -y "youtube EMBED link"
+practisimo generate
+xdg-open html/Name\ of\ song.html #linux
+open html/Name\ of\ song.html #mac
+```
