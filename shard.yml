@@ -1,0 +1,13 @@
+name: practisimo
+version: 0.1.0
+
+authors:
+  - Kasper Jensen <kasper.jensen@solarisbank.de>
+
+targets:
+  practisimo:
+    main: src/practisimo.cr
+
+crystal: 0.33.0
+
+license: MIT
