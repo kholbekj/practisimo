@@ -20,5 +20,9 @@ module Practisimo
       end
     end
     File.write(@@song.path, @@song.to_song_file)
+  elsif ARGV[0] == "generate"
+    Song.load_all.each do |song|
+      File.write(song.html_path, song.to_html)
+    end
   end
 end
