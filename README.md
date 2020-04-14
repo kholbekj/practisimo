@@ -1,5 +1,7 @@
 # Practisimo
 
+![](screenshot.png)
+
 This is a little program that generates html pages with youtube embeds next to a picture.
 
 It was meant for backing tracks and sheet music, but get creative with it.
