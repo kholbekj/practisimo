@@ -5,3 +5,5 @@
 *.dwarf
 /songs/*.song
 /site/*.html
+/site/CNAME
+/site/pictures/
