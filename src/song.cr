@@ -26,7 +26,7 @@ class Song
   end
 
   def html_path
-    "html/#{html_name}"
+    "site/#{html_name}"
   end
 
   def to_song_file
@@ -40,12 +40,31 @@ class Song
       <head>
         <meta charset="utf-8">
         <title>#{title}</title>
+        <script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
       </head>
       <body>
-        <a href="index.html">Back to index!</a><br>
-        <iframe width="560" height="315" src="#{link}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <img src="#{file_path}"></img>
+        <div class="title">
+          <h1>#{title}</h1>
+        </div>
+        <div class="outer box"></div>
+        <div class="inner box">
+          <img src="#{file_path}"></img>
+        </div>
+        <div class="outer container box">
+          <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="#{link}"></div>
+        </div>
+
+        <div class="footer">
+          <a href="index.html">Back to index!</a><br>
+        </div>
+
+        <script>
+          const player = new Plyr('#player', {});
+          window.player = player;
+        </script>
       </body>
     </html>
     HTML

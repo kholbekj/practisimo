@@ -27,9 +27,15 @@ module Practisimo
       <head>
         <meta charset="utf-8">
         <title>Index!</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
       </head>
       <body>
-        <ul>
+        <div class="title">
+          <h1> Practisimo </h1>
+        </div>
+        <div class="song-list">
+          <ul>
     HTML
 
     Song.load_all.each do |song|
@@ -38,11 +44,12 @@ module Practisimo
     end
 
     index += <<-HTML
-        <ul>
+          <ul>
+        </div>
       </body>
     </html>
     HTML
 
-    File.write("html/index.html", index)
+    File.write("site/index.html", index)
   end
 end

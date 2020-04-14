@@ -1,0 +1,44 @@
+body {
+  background-color: #fff0ed;
+  font-family: 'Libre Caslon Display', serif;
+}
+.container {
+  max-width: 500px;
+}
+.outer {
+  width: 20%;
+}
+.inner {
+  width: 50%;
+}
+.box {
+  float: left;
+  margin: 1px;
+  text-align: center;
+}
+.title {
+  margin: 20px auto;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  font-size: 30px;
+}
+.song-list ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 46px;
+  font-family: 'Amatic SC', cursive;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
