@@ -42,7 +42,7 @@ class Song
         <title>#{title}</title>
         <script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
       </head>
       <body>

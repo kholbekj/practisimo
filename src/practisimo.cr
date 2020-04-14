@@ -27,7 +27,7 @@ module Practisimo
       <head>
         <meta charset="utf-8">
         <title>Index!</title>
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
       </head>
       <body>
